@@ -37,7 +37,7 @@ $("#js-your-html-element").texteditor();
 As long as you retain this notice you can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return.
 
 ## Changelog
-- v0.1: Very raw first version of the plugin
+- v0.0.1: Very raw first version of the plugin
 
 ## Contributing
 

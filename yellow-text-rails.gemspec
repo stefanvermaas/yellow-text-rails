@@ -1,7 +1,6 @@
 # -*- encoding: utf-8 -*-
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'yellow-text-rails/version'
+$:.push File.expand_path("../lib", __FILE__)
+require "underscore-rails/version"
 
 Gem::Specification.new do |gem|
 	# Gem information
@@ -15,11 +14,8 @@ Gem::Specification.new do |gem|
 	# Project name
 	gem.rubyforge_project = "yellow-text-rails"	
 	
-	gem.files         = `git ls-files`.split($/)
-	gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
-	gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
-	gem.require_paths = ["lib"]
-	
-	# The dependencies
-	gem.add_dependency('jquery-rails', '~> 2.0.2')	
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.require_paths = ["lib"]
 end
