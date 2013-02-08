@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
 	gem.authors       = ["Stefan Vermaas"]
 	gem.email         = ["stefan@yellowduckwebdesign.nl"]
 	gem.homepage    = "http://www.stefanvermaas.nl/yellow-text/"
-	gem.summary     = "Yellow Text makes text editing fun again with a beautyful interface and a few very clean options"
+	gem.summary     = "Yellow Text makes text editing fun again with a beautiful interface and a few very clean options"
 	
 	# Project name
 	gem.rubyforge_project = "yellow-text-rails"	
