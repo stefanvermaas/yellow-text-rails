@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "underscore-rails/version"
+require "yellow-text-rails/version"
 
 Gem::Specification.new do |gem|
 	# Gem information
@@ -14,8 +14,8 @@ Gem::Specification.new do |gem|
 	# Project name
 	gem.rubyforge_project = "yellow-text-rails"	
 	
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
-  s.require_paths = ["lib"]
+	gem.files         = `git ls-files`.split("\n")
+	gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+	gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+	gem.require_paths = ["lib"]
 end
