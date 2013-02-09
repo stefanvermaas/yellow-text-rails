@@ -31,7 +31,13 @@ Make sure you call the plugin by it's name
 $("#js-your-html-element").texteditor();
 ```
 
-**Step 2:** Annnnnnnnnnd... finished! Wasn't that hard huh?!
+**Step 2:**
+Make sure you're calling the javascript file in your application.js and the css file in your application.css:
+
+`//= require yellow-text` and `*= require yellow-text`
+
+
+**Step 3:** Annnnnnnnnnd... finished! Wasn't that hard huh?!
 
 ## Beer-ware license
 As long as you retain this notice you can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return.
