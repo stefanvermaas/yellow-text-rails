@@ -14,8 +14,8 @@ Gem::Specification.new do |gem|
 	# Project name
 	gem.rubyforge_project = "yellow-text-rails"	
 	
-	gem.files         = `git ls-files`.split("\n")
-	gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-	gem.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+	# Project files and dependencies
+	gem.files         = Dir["{lib,vendor}/**/*"]
 	gem.require_paths = ["lib"]
+	gem.add_dependency "railties", "~> 3.1"
 end
