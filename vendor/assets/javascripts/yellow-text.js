@@ -4,7 +4,7 @@
 *	This plugin is created to make text editing
 *	more fun and to make it easy for the editor.
 *
-*	Version: 0.3.1
+*	Version: 0.3.2
 *	Author: Stefan Vermaas
 *	URL: www.stefanvermaas.nl
 *
@@ -409,15 +409,17 @@
 			
 			// Unwrap all br tags and remove the ugly div tags
 			body.find("br").unwrap();
-						
-			// Find the first line
-			var firstLine = body.contents()[0];
+		      
+		    // Get fancy stuff done with the first line	
+			var firstLine = "<p>" + $( body.contents()[0] ).html() + "</p>";
 			
-			// Check or the first line has a p tag surrounding it
-			if( body.find(firstLine).not("p") ) {
-				// The first line does not have a p tag
-				body.find(firstLine).wrap("p");
-			}
+			// Remove the first line
+			$( body.contents()[0] ).remove();
+			
+			// Add the line on the first line
+			body.prepend( firstLine );
+			
+			console.log( body.contents()[0] );
 		},
         
 		/**
@@ -433,9 +435,9 @@
 		putContentBack: function() {
 			// Grap the content of the iframe
 			var postData = $(methods.editor).contents().find("body").html();
-
-			// Add the data to the textarea, where this plugin is attached too
-			$( methods.el ).html(postData);
+			
+			// Make sure the textarea is empty
+			$( methods.el ).val( postData );
 		}
 	};
 	

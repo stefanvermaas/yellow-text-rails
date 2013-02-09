@@ -39,6 +39,7 @@ As long as you retain this notice you can do whatever you want with this stuff. 
 ## Changelog
 - v0.0.1: Very raw first version of the plugin
 - v0.0.2: Fixed a typo in the description
+- v0.0.3 t/m v0.0.5: Updates of the jQuery plugin
 
 ## Contributing
 
