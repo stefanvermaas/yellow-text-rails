@@ -42,12 +42,6 @@ Make sure you're calling the javascript file in your application.js and the css 
 ## Beer-ware license
 As long as you retain this notice you can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return.
 
-## Changelog
-- v0.0.1: Very raw first version of the plugin
-- v0.0.2: Fixed a typo in the description
-- v0.0.3 t/m v0.0.5: Updates of the jQuery plugin
-- v0.0.6: Fixed the images not showing up
-
 ## Contributing
 
 1. Fork it
